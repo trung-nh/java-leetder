@@ -16,7 +16,7 @@ public class _153_FindMinimumInRotatedSortedArray {
 
             if (mid > 0 && nums[mid] < nums[mid - 1]) return nums[mid];
 
-            if (nums[left] <= nums[mid] && nums[mid] < nums[right]) {
+            if (nums[left] < nums[right]) {
                 return nums[left];
             }
 
